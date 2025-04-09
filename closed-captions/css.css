@@ -19,10 +19,13 @@ Feel free to adjust the defaults to your needs.
 }
 .voice1 {
 	font-style: italic;
+	animation: heavy-shake  0.5s linear infinite;
 }
 .voice2 {
 	font-weight: bold;
 }
+
+
 
 /* **********************************************
 The first paragraph, with extended timing for 
@@ -32,7 +35,7 @@ The first paragraph, with extended timing for
 	spoken.
 You probably want to change the styling.
 ********************************************** */
-.p0 span {
+/* .p0 span {
 	opacity: 0;
 	font-family: brenner;
 }
@@ -96,7 +99,7 @@ You probably want to change the styling.
 	opacity: 1;
 	transition: 0s 3.7s;
 	font-family: "brenner slab";
-}
+} */
 
 .p1.on {
 	background: hotpink;
@@ -135,16 +138,43 @@ body {
 #video-container {
 	margin: auto;
 }
-#video-mask {
+/* #video-mask {
 	aspect-ratio: 240.5/100;
 	display: grid;
 	overflow: hidden;
 	align-content: center;
 	transition: 1s;
-}
+} */
 
 iframe {
-	width: 80vw;
-	height: 53.33333333vw;
+	width: 700px;
+	height: 450px;
 	margin-top: -0.35vw;
+}
+
+
+@keyframes tilt-shaking {
+	0% { transform: rotate(0deg); }
+	25% { transform: rotate(5deg); }
+	50% { transform: rotate(0eg); }
+	75% { transform: rotate(-5deg); }
+	100% { transform: rotate(0deg); }
+}
+
+@keyframes heavy-shake {
+	0% { transform: translate(0px, 0px) rotate(0deg); }
+	10% { transform: translate(-8px, -2px) rotate(-2deg); }
+	20% { transform: translate(8px, 2px) rotate(2deg); }
+	30% { transform: translate(-6px, 2px) rotate(-1deg); }
+	40% { transform: translate(6px, -2px) rotate(1deg); }
+	50% { transform: translate(-4px, 2px) rotate(0deg); }
+	60% { transform: translate(4px, -2px) rotate(1deg); }
+	70% { transform: translate(-2px, 2px) rotate(-1deg); }
+	80% { transform: translate(2px, -2px) rotate(0deg); }
+	90% { transform: translate(-1px, 1px) rotate(1deg); }
+	100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+.effect{
+	top: 10px;
 }
