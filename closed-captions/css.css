@@ -19,7 +19,6 @@ Feel free to adjust the defaults to your needs.
 }
 .voice1 {
 	font-style: italic;
-	animation: heavy-shake  0.5s linear infinite;
 }
 .voice2 {
 	font-weight: bold;
@@ -175,6 +174,21 @@ iframe {
 	100% { transform: translate(0px, 0px) rotate(0deg); }
 }
 
+@keyframes heavy-shake2 {
+	0% { transform: translate(0px, 0px) rotate(0deg); }
+	10% { transform: translate(-8px, -2px) rotate(-2deg); }
+	20% { transform: translate(8px, 2px) rotate(2deg); }
+	30% { transform: translate(-6px, 2px) rotate(-1deg); }
+	40% { transform: translate(6px, -2px) rotate(1deg); }
+	50% { transform: translate(-4px, 2px) rotate(0deg); }
+	60% { transform: translate(4px, -2px) rotate(1deg); }
+	70% { transform: translate(-2px, 2px) rotate(-1deg); }
+	80% { transform: translate(2px, -2px) rotate(0deg); }
+	90% { transform: translate(-1px, 1px) rotate(1deg); }
+	100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
 .effect{
 	top: 10px;
+	animation: heavy-shake  0.5s linear infinite;
 }
