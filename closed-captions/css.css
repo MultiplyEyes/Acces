@@ -1,5 +1,6 @@
 :root{
 	--width: 70vw;
+    --text-height: 50px;
 }
 
 *{
@@ -117,6 +118,7 @@ You probably want to change the styling.
 } */
 
 .on {
+	margin-top: 0;
 	text-align: center;
 	width: var(--width)
 }
@@ -145,9 +147,9 @@ body {
 }
 #video-container {
 	margin: auto;
-	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-	padding: 15px;
-	border-radius: 5px;
+	background-color: black;
+	height: calc(calc(var(--width)*0.5)+var(--text-height));
+	width: var(--width);
 }
 /* #video-mask {
 	aspect-ratio: 240.5/100;
