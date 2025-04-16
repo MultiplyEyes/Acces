@@ -105,10 +105,9 @@ You probably want to change the styling.
 	font-family: "brenner slab";
 } */
 
-.p1.on {
-	color: red;
+.on {
 	text-align: center;
-	width: 50vw;
+	width: 70vw;
 }
 
 
@@ -121,9 +120,6 @@ Sounds.
 *********************************************  */
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
-.sound1 {
-	background: #e1bf92
-}
 
 /* **********************************************
 Basic layout.
@@ -140,6 +136,7 @@ body {
 	margin: auto;
 	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 	padding: 15px;
+	border-radius: 5px;
 }
 /* #video-mask {
 	aspect-ratio: 240.5/100;
@@ -150,8 +147,8 @@ body {
 } */
 
 iframe {
-	width: 50vw;
-	height: calc(50vw * 0.5);
+	width: 70vw;
+	height: calc(70vw * 0.5);
 }
 
 html:has(.on#explosion) #video-mask {
@@ -160,10 +157,6 @@ html:has(.on#explosion) #video-mask {
 
 html:has(.on#explosion) #explosion {
 	animation: heavy-shake 0.3s 5;
-}
-
-html:has(.on#monster) #monster {
-	animation: grow-text 1.8s linear alternate;
 }
 
 @keyframes heavy-shake {
@@ -180,11 +173,6 @@ html:has(.on#monster) #monster {
 	100% { transform: translate(0px, 0px) rotate(0deg); }
 }
 
-@keyframes grow-text {
-	from {
-	  transform: scale(1);
-	}
-	to {
-	  transform: scale(3);
-	}
-  }
+span{
+	font-size: 25px;
+}
