@@ -1,3 +1,7 @@
+:root{
+	--width: 70vw;
+}
+
 *{
 	overflow-x: hidden;
 	overflow-y: hidden;
@@ -17,16 +21,23 @@ Feel free to adjust the defaults to your needs.
 }
 #closed-captions .on {
 	opacity: 1;
+	background-color: black;
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 #closed-captions .off {
 	transition: .2s;
 	opacity: 0;
 }
 .voice1 {
-	font-style: italic;
+	color: lime;
 }
 .voice2 {
-	font-weight: bold;
+	color: cyan
+}
+.sound{
+	color: white;
 }
 
 
@@ -107,7 +118,7 @@ You probably want to change the styling.
 
 .on {
 	text-align: center;
-	width: 70vw;
+	width: var(--width)
 }
 
 
@@ -147,8 +158,8 @@ body {
 } */
 
 iframe {
-	width: 70vw;
-	height: calc(70vw * 0.5);
+	width: var(--width);
+	height: calc(var(--width) * 0.5);
 }
 
 html:has(.on#explosion) #video-mask {
