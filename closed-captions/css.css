@@ -200,15 +200,15 @@ span{
 }
 
 html:has(.on#wind) .on#wind{
-	animation: wind 1.5s linear;
-	text-align: left;
+	animation: wind 2s linear infinite;
+	text-align: right;
 }
 
 @keyframes wind{
 	0%{
-		left:0
+		right:0;
 	}
 	100%{
-		left: 100%;
+		right: 100%;
 	}
 }
