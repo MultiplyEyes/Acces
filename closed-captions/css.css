@@ -1,3 +1,17 @@
+:root{
+	--width: 70vw;
+}
+
+*{
+	overflow-x: hidden;
+	overflow-y: hidden;
+	font-family: sans-serif;
+}
+
+body{
+	background-color: black;
+}
+
 /* **********************************************
 Basic mechanics
 Hide all paragraphs by default
@@ -12,17 +26,22 @@ Feel free to adjust the defaults to your needs.
 }
 #closed-captions .on {
 	opacity: 1;
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 #closed-captions .off {
 	transition: .2s;
 	opacity: 0;
 }
 .voice1 {
-	font-style: italic;
-	animation: heavy-shake  0.5s linear infinite;
+	color: lime;
 }
 .voice2 {
-	font-weight: bold;
+	color: cyan
+}
+.sound{
+	color: white;
 }
 
 
@@ -101,10 +120,14 @@ You probably want to change the styling.
 	font-family: "brenner slab";
 } */
 
-.p1.on {
-	background: hotpink;
-	color: red;
+.on {
+	margin-top: 0;
+	text-align: center;
+	width: var(--width)
 }
+
+
+
 
 /* **********************************************
 Sounds.
@@ -114,15 +137,6 @@ Sounds.
 *********************************************  */
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
-.sound1 {
-	background: hotpink;
-}
-
-/* The moment the class .sound1 is added to the body, the movie makes a turn */
-.sound1 #video-mask {
-	box-shadow: 2em 2em 2em olivedrab;
-}
-
 
 /* **********************************************
 Basic layout.
@@ -137,6 +151,11 @@ body {
 }
 #video-container {
 	margin: auto;
+	background-color: black;
+	height: calc(var(--width) * 0.6);
+	width: var(--width);
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 /* #video-mask {
 	aspect-ratio: 240.5/100;
@@ -147,34 +166,49 @@ body {
 } */
 
 iframe {
-	width: 700px;
-	height: 450px;
-	margin-top: -0.35vw;
+	width: var(--width);
+	height: calc(var(--width) * 0.5);
 }
 
-
-@keyframes tilt-shaking {
-	0% { transform: rotate(0deg); }
-	25% { transform: rotate(5deg); }
-	50% { transform: rotate(0eg); }
-	75% { transform: rotate(-5deg); }
-	100% { transform: rotate(0deg); }
+html:has(.on#explosion) .on#explosion{
+	animation: heavy-shake 0.5s infinite;
 }
 
 @keyframes heavy-shake {
-	0% { transform: translate(0px, 0px) rotate(0deg); }
-	10% { transform: translate(-8px, -2px) rotate(-2deg); }
-	20% { transform: translate(8px, 2px) rotate(2deg); }
-	30% { transform: translate(-6px, 2px) rotate(-1deg); }
-	40% { transform: translate(6px, -2px) rotate(1deg); }
-	50% { transform: translate(-4px, 2px) rotate(0deg); }
-	60% { transform: translate(4px, -2px) rotate(1deg); }
-	70% { transform: translate(-2px, 2px) rotate(-1deg); }
-	80% { transform: translate(2px, -2px) rotate(0deg); }
-	90% { transform: translate(-1px, 1px) rotate(1deg); }
-	100% { transform: translate(0px, 0px) rotate(0deg); }
+	0% { transform: translate(0px); }
+	10% { transform: translate(-6px); }
+	20% { transform: translate(6px); }
+	30% { transform: translate(-4px);  }
+	40% { transform: translate(4px); }
+	50% { transform: translate(-2px);  }
+	60% { transform: translate(2px);  }
+	70% { transform: translate(-1px);  }
+	80% { transform: translate(1px);  }
+	90% { transform: translate(-0.5px); }
+	100% { transform: translate(0px); }
 }
 
-.effect{
-	top: 10px;
+span{
+	margin-top: 0;
+	font-size: 20px;
+}
+
+@media (max-width: 600px) {
+	span{
+		font-size: 10px;
+	}
+}
+
+html:has(.on#wind) .on#wind{
+	animation: wind 2s linear infinite;
+	text-align: right;
+}
+
+@keyframes wind{
+	0%{
+		right:0;
+	}
+	100%{
+		right: 100%;
+	}
 }
