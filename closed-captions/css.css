@@ -1,11 +1,15 @@
 :root{
 	--width: 70vw;
-    --text-height: 50px;
 }
 
 *{
 	overflow-x: hidden;
 	overflow-y: hidden;
+	font-family: sans-serif;
+}
+
+body{
+	background-color: black;
 }
 
 /* **********************************************
@@ -22,7 +26,6 @@ Feel free to adjust the defaults to your needs.
 }
 #closed-captions .on {
 	opacity: 1;
-	background-color: black;
 	display: block;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -125,6 +128,7 @@ You probably want to change the styling.
 
 
 
+
 /* **********************************************
 Sounds.
 	You can style the whole body, or you can 
@@ -148,8 +152,10 @@ body {
 #video-container {
 	margin: auto;
 	background-color: black;
-	height: calc(calc(var(--width)*0.5)+var(--text-height));
+	height: calc(var(--width) * 0.6);
 	width: var(--width);
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 /* #video-mask {
 	aspect-ratio: 240.5/100;
@@ -164,28 +170,45 @@ iframe {
 	height: calc(var(--width) * 0.5);
 }
 
-html:has(.on#explosion) #video-mask {
-	animation: heavy-shake 0.3s 5;
-}
-
-html:has(.on#explosion) #explosion {
-	animation: heavy-shake 0.3s 5;
+html:has(.on#explosion) .on#explosion{
+	animation: heavy-shake 0.5s infinite;
 }
 
 @keyframes heavy-shake {
-	0% { transform: translate(0px, 0px) rotate(0deg); }
-	10% { transform: translate(-8px, -2px) rotate(-2deg); }
-	20% { transform: translate(8px, 2px) rotate(2deg); }
-	30% { transform: translate(-6px, 2px) rotate(-1deg); }
-	40% { transform: translate(6px, -2px) rotate(1deg); }
-	50% { transform: translate(-4px, 2px) rotate(0deg); }
-	60% { transform: translate(4px, -2px) rotate(1deg); }
-	70% { transform: translate(-2px, 2px) rotate(-1deg); }
-	80% { transform: translate(2px, -2px) rotate(0deg); }
-	90% { transform: translate(-1px, 1px) rotate(1deg); }
-	100% { transform: translate(0px, 0px) rotate(0deg); }
+	0% { transform: translate(0px); }
+	10% { transform: translate(-6px); }
+	20% { transform: translate(6px); }
+	30% { transform: translate(-4px);  }
+	40% { transform: translate(4px); }
+	50% { transform: translate(-2px);  }
+	60% { transform: translate(2px);  }
+	70% { transform: translate(-1px);  }
+	80% { transform: translate(1px);  }
+	90% { transform: translate(-0.5px); }
+	100% { transform: translate(0px); }
 }
 
 span{
-	font-size: 25px;
+	margin-top: 0;
+	font-size: 20px;
+}
+
+@media (max-width: 600px) {
+	span{
+		font-size: 10px;
+	}
+}
+
+html:has(.on#wind) .on#wind{
+	animation: wind 1.5s linear;
+	text-align: left;
+}
+
+@keyframes wind{
+	0%{
+		left:0
+	}
+	100%{
+		left: 100%;
+	}
 }
