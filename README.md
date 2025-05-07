@@ -61,3 +61,58 @@ Make the wind sound effect beter through using the screen and try to make it mor
 Only use the screen shake if for 1 sec for sound effect you can't see but hear. This maybe can used for an later scene where an hard knock happens and you don't see it well.
 
 Match the sound effect beter with the sound it self that the user is more immerseved.
+
+## Feedback
+
+Moet herkansen. Ging ok en volgens vasilis heb een hele goede begin in de test periode maar te pasive speelde daarna. Hij wilt dat ik 6 Code pens ga maken met hoe irritant de piep geluid is en dat jammer genoeg de wind te visual is.
+
+uiteindelijk vind Vasillis dat ik alleen echt Closed Captions heb gemaakt en niks anders.
+
+## Test plan voor vakantie
+
+Maak 6 code pens voor HCD piep geluid. Eerst concept en dan meer.
+
+- Screen shake in an increasing way.
+- Cube behind the screen shaking and growing larger.
+- Annoying colors that gets worse over time.
+- Combination of multiple to be able to make 6 code pens
+
+Also maybe try something else with the wind figure it out Matthijs next week.kn
+
+
+## retake
+
+Ik moest minimaal 6 code pens maken met de piep geluiden na doen. Ik heb uit eindelijk 13 verschillende gemaakt. Dit 6/7 zelfde technieken met variatie en combinaties van meerdere technieken.
+
+Deze code pens zijn bedoelt als prototypes.
+
+1. [Codepen 1](https://codepen.io/vpkiflhv-the-flexboxer/pen/abGgXzZ)
+
+
+2. [Codepen 2](https://codepen.io/vpkiflhv-the-flexboxer/pen/PwwawRp)
+
+3. [Codepen 3](https://codepen.io/vpkiflhv-the-flexboxer/pen/bNNKNMo)
+
+4. [Codepen 4](https://codepen.io/vpkiflhv-the-flexboxer/pen/raaKVqx)
+
+5. [Codepen 5](https://codepen.io/vpkiflhv-the-flexboxer/pen/PwwaqLx)
+
+6. [Codepen 6](https://codepen.io/vpkiflhv-the-flexboxer/pen/ByyVoBb)
+
+7. [Codepen 7](https://codepen.io/vpkiflhv-the-flexboxer/pen/GggGpeK)
+
+8. [Codepen 8](hhttps://codepen.io/vpkiflhv-the-flexboxer/pen/GggGpeK)
+
+9. [Codepen 9](https://codepen.io/vpkiflhv-the-flexboxer/pen/EaaRRBN)
+
+10. [Codepen 10 (Warning don't look if epelectic)](https://codepen.io/vpkiflhv-the-flexboxer/pen/yyyEqYN)
+
+11. [Codepen 11](https://codepen.io/vpkiflhv-the-flexboxer/pen/GggGBye)
+
+12. [Codepen 12](https://codepen.io/vpkiflhv-the-flexboxer/pen/ByyVqym)
+
+13. [Codepen 13](https://codepen.io/vpkiflhv-the-flexboxer/pen/azzKRNb)
+
+Ik zou met deze prototypes wilen testen en kijken wat goed en te ver gaat. Te ver is eigelijk de goal want het geluid is best uit of nergens en verassend. Dit is ook de reden dat ik het zo ver heb door getrokken.
+
+Ik zou afhankelijk van de test resultaten de prototypes gaan combineren en kijken wat het beste werkt. En verwijderen wat niet werkt. en dan het beste matchen met de piep geluiden.
