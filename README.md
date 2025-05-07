@@ -97,11 +97,11 @@ Deze code pens zijn bedoelt als prototypes.
 
 5. [Codepen 5](https://codepen.io/vpkiflhv-the-flexboxer/pen/PwwaqLx)
 
-6. [Codepen 6](https://codepen.io/vpkiflhv-the-flexboxer/pen/ByyVoBb)
+6. [Codepen 6](https://codepen.io/vpkiflhv-the-flexboxer/pen/ZYYRGgW)
 
-7. [Codepen 7](https://codepen.io/vpkiflhv-the-flexboxer/pen/GggGpeK)
+7. [Codepen 7](https://codepen.io/vpkiflhv-the-flexboxer/pen/ByyVoBb)
 
-8. [Codepen 8](hhttps://codepen.io/vpkiflhv-the-flexboxer/pen/GggGpeK)
+8. [Codepen 8](https://codepen.io/vpkiflhv-the-flexboxer/pen/GggGpeK)
 
 9. [Codepen 9](https://codepen.io/vpkiflhv-the-flexboxer/pen/EaaRRBN)
 
